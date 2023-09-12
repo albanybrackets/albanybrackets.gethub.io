@@ -30,8 +30,8 @@
 				<td width=200><center><font size="3"><b>Bracket Results</b></font></center></td>
 			</tr> 	
 			<tr>
-				<td ><center><a id="TUEALIVE" href="./viewer.html?pdf=tuesdayalive">Women's</a></center></td>
-				<td ><center><a href="./viewer.html?pdf=tuesdaybrackets">Women's</a></center></td>
+				<td ><center><a id="TUEALIVE" href="./viewer.html?pdf=tuesdayalive">Alive</a></center></td>
+				<td ><center><a href="./viewer.html?pdf=tuesdaybrackets">Brackets</a></center></td>
 			</tr>				
 		</table>
 		<table id="WED" >
@@ -43,8 +43,8 @@
 				<td width=200><center><font size="3"><b>Bracket Results</b></font></center></td>
 			</tr>
 			<tr>
-				<td><center><a id="WEDALIVE" href="./viewer.html?pdf=wednesdayalive">Alive List</a></center></td>
-				<td><center><a href="./viewer.html?pdf=wednesdaybrackets">Women's</a></center></td>
+				<td><center><a id="WEDALIVE" href="./viewer.html?pdf=wednesdayalive">Alive</a></center></td>
+				<td><center><a href="./viewer.html?pdf=wednesdaybrackets">Brackets</a></center></td>
 			</tr>			
 		</table>		
 		<script>
@@ -55,29 +55,29 @@
 			var WedAlive = 0;
 			
 				
-			if(doesFileExist("./tuesdayalive.pdf") || doesFileExist("./tuesdaybrackets.pdf")){ Tue = 1; } 	
-			if(doesFileExist("./tuesdayalive.pdf") { TueAlive = 1; }
-			if(doesFileExist("./wednesdayalive.pdf") || doesFileExist("./wednesdaybrackets.pdf")){ Wed = 1; } 
-			if(doesFileExist("./wednesdayalive.pdf") { WedAlive = 1; }
+			//if(doesFileExist("./tuesdayalive.pdf") || doesFileExist("./tuesdaybrackets.pdf")){ Tue = 1; } 	
+			//if(doesFileExist("./tuesdayalive.pdf") { TueAlive = 1; }
+			//if(doesFileExist("./wednesdayalive.pdf") || doesFileExist("./wednesdaybrackets.pdf")){ Wed = 1; } 
+			//if(doesFileExist("./wednesdayalive.pdf") { WedAlive = 1; }
 
 			//Tuesday Night
-			if(Tue == 1){ document.getElementById("TUE").style.display = ''; }
-			if(TueAlive == 1){ document.getElementById("TUEALIVE").style.display = ''; }
+			//if(Tue == 1){ document.getElementById("TUE").style.display = ''; }
+			//if(TueAlive == 1){ document.getElementById("TUEALIVE").style.display = ''; }
 			
 			//Wednesday Night
-			if(Wed == 1){ document.getElementById("WED").style.display = ''; }
-			if(WedAlive == 1){ document.getElementById("WEDALIVE").style.display = ''; }
+			//if(Wed == 1){ document.getElementById("WED").style.display = ''; }
+			//if(WedAlive == 1){ document.getElementById("WEDALIVE").style.display = ''; }
 			
-			function doesFileExist(urlToFile) {				
-				var xhr = new XMLHttpRequest();
-				xhr.open('HEAD', urlToFile, false);
-				xhr.send();
-				if (xhr.status == "404") {
-					return false;
-				} else {
-					return true;
-				}
-			}
+			//function doesFileExist(urlToFile) {				
+			//	var xhr = new XMLHttpRequest();
+			//	xhr.open('HEAD', urlToFile, false);
+			//	xhr.send();
+			//	if (xhr.status == "404") {
+			//		return false;
+			//	} else {
+			//		return true;
+			//	}
+			//}
 		</script>
 	</center>
   </body>
